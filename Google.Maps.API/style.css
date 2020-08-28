@@ -1,0 +1,89 @@
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+    height: 90%;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+  }
+
+/* Quiz area */
+#quiz-area {
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create columns for quiz-area and map that float next to each other */
+.column-left {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 800px;
+}
+.column-right {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 800px;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
+
+h1,
+h2 {
+    clear: both;
+}
+
+h1,
+h2 {
+    margin: 0.2em;
+    text-align: center;   
+}
+h1 {
+    font-size: 3em;
+    color: royalblue;
+}
+h2 {
+    font-size: 2em;
+    color: black;
+}
+#q1, 
+#q2, 
+#q3, 
+#q4, 
+#q5 {
+  font-size: 1.2em;
+  margin: 0.5em;
+  text-align: center;
+  color: blanchedalmond;
+  background-color: royalblue;
+}
+#a1, 
+#a2, 
+#a3, 
+#a4, 
+#a5 {
+  font-size: 1.2em;
+  margin: 0.5em;
+  text-align: center;
+  color: green;
+}

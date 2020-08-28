@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoMuAQyQJ0nvjVylD68flNNnfqUlle1xM&libraries=drawing&callback=initMap"
+         async defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="row">
+        <!-- begin quiz area -->
+        <div class="column-left">
+            <div class="quiz-area">
+                <h1 >Map Quiz</h1>
+                <h2 >Please double click on the map to locate:</h2>
+                <p id="q1"></p>     <!-- begin 5 Q&A -->
+                <p id="a1"></p>
+                <p id="q2"></p>
+                <p id="a2"></p>
+                <p id="q3"></p>
+                <p id="a3"></p>
+                <p id="q4"></p>
+                <p id="a4"></p>
+                <p id="q5"></p>
+                <p id="a5"></p>     <!-- end 5 Q&A -->
+                <h2 id="re"></h2>   <!-- show quiz results -->
+            </div>
+         <!-- end quiz area -->
+        </div>
+        <!-- begin map area -->
+        <div class="column-right">
+            <div id="map"></div>
+        </div>
+        <!-- end map area -->
+    </div>
+  </body>  
+</html>
+
